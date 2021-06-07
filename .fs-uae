@@ -1,0 +1,5 @@
+chip_memory=1024
+hard_drive_0=uae/dh0
+amiga_model=A1200
+floppy_drive_volume=0
+serial_port=/tmp/vser

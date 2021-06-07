@@ -1,0 +1,32 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"amiga-assembly.cstool": "cstool",
+		"amiga-assembly.vasm": {
+			"enabled": true,
+			"cwd": "${env:VBCC}/bin",
+			"file": "vasmm68k_mot",
+			"options": [
+				"-m68000",
+				"-Fhunk",
+				"-linedebug"
+			]
+		},
+		"C_Cpp.formatting": "clangFormat",
+		"C_Cpp.default.cStandard": "c99",
+    "C_Cpp.default.includePath": [
+      "${env:NDK_INC}"
+    ]
+  },
+  "extensions": {
+    "recommendations": [
+      "prb28.amiga-assembly",
+      "ms-vscode.cpptools",
+      "editorconfig.editorconfig"
+    ]
+  }
+}

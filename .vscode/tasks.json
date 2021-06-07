@@ -1,0 +1,44 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build",
+      "type": "shell",
+      "linux": {
+        "options": {},
+        "command": "make"
+      },
+      "problemMatcher": {
+        "owner": "cpp",
+        "fileLocation": ["relative", "${workspaceFolder}"],
+        "pattern": {
+          "regexp": "^(warning|error) ([0-9]*) in line ([0-9]*) of \"(.*)\": (.*)$",
+          "severity": 1,
+          "line": 3,
+          "file": 4,
+          "message": 5
+        }
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Run",
+      "type": "shell",
+      "linux": {
+        "options": {},
+        "command": "make run"
+      }
+    },
+    {
+      "label": "Clean",
+      "type": "shell",
+      "linux": {
+          "options": {},
+          "command": "make clean"
+      }
+    }
+  ]
+}
